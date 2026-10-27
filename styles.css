@@ -313,6 +313,74 @@ nav a:hover {
 }
 
 /* Contact */
+#contact {
+    padding: 70px 10%;
+    background-color: #080e1a;
+    color: white;
+}
+
+/* Contact Heading */
+#contact h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+/* Contact Cards */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Contact Cards */
+.contact-card {
+    width: 300px;
+    height: 150px;
+
+    background-color: #111a2b;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+/* Contact Icons */
+.contact-icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Card Heading */
+.contact-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Contact Links */
+.contact-card a {
+    color: #777;
+    text-decoration: none;
+}
+
+/* Card Hover */
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card a:hover {
+    color: white;
+}
 
 /* Footer Styling */
 footer {
