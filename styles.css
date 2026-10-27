@@ -1,7 +1,6 @@
 /* =========================================
    BASIC / GLOBAL STYLING
 ========================================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +14,6 @@ html {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-
   background-color: #0d0d0d;
   color: #f5f5f5;
 }
@@ -23,53 +21,37 @@ body {
 /* =========================================
    HEADER / NAVIGATION
 ========================================= */
-
 header {
   background-color: #0d0d0d;
-
   padding: 20px 40px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   border-bottom: 2px solid #0097b2;
 }
 
-/* Logo */
-
 .logo a {
   color: #f5f5f5;
-
   font-size: 25px;
   font-weight: bold;
-
   text-decoration: none;
 }
 
 .logo p {
   color: #0097b2;
-
   font-size: 12px;
 }
 
-/* Navigation */
-
 nav ul {
   display: flex;
-
   list-style: none;
-
   gap: 25px;
 }
 
 nav a {
   color: #f5f5f5;
-
   text-decoration: none;
-
   font-size: 20px;
-
   transition: 0.3s;
 }
 
@@ -77,21 +59,15 @@ nav a:hover {
   color: #0097b2;
 }
 
-/* Social Links */
-
 .social-links {
   display: flex;
-
   gap: 15px;
 }
 
 .social-links a {
   color: #b5b5b5;
-
   text-decoration: none;
-
   font-size: 20px;
-
   transition: 0.3s;
 }
 
@@ -102,138 +78,91 @@ nav a:hover {
 /* =========================================
    HERO SECTION
 ========================================= */
-
 #hero {
   min-height: 600px;
-
   padding: 60px 40px;
-
   display: flex;
   align-items: center;
-
   background-color: #1a1a1a;
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* Hero Content */
-
 .hero-content {
   max-width: 600px;
 }
 
-/* Hero Heading */
-
 .hero-content h1 {
   color: #f5f5f5;
-
   font-size: 48px;
-
   margin-bottom: 20px;
 }
 
-/* Adds blue accent after name */
-
 .hero-content h1::after {
-  content: ".";
   color: #0097b2;
 }
 
-/* Hero Paragraph */
-
 .hero-content p {
   color: #b5b5b5;
-
   font-size: 18px;
-
   margin-bottom: 30px;
 }
 
-/* Hero Buttons */
-
 .hero-buttons {
   display: flex;
-
   gap: 15px;
 }
 
 .hero-button {
   display: inline-block;
-
   background-color: #0097b2;
   color: #ffffff;
-
   padding: 12px 24px;
-
   text-decoration: none;
-
   border-radius: 4px;
-
   transition: 0.3s;
 }
 
 .hero-button:hover {
   background-color: #f5f5f5;
-
   color: #0d0d0d;
 }
 
 /* =========================================
    ABOUT SECTION
 ========================================= */
-
 #about {
   padding: 70px 10%;
 
   background-color: #0d0d0d;
 }
 
-/* About Heading */
-
 #about h2 {
   color: #0097b2;
-
   text-align: center;
-
   font-size: 32px;
-
   margin-bottom: 40px;
 }
 
-/* About Container */
-
 .about-container {
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   gap: 50px;
 }
-
-/* About Image */
 
 .about-image {
   width: 300px;
   height: 300px;
-
   background-color: #252525;
-
   border: 2px solid #0097b2;
-
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   border-radius: 8px;
-
   color: #b5b5b5;
 }
-
-/* About Text */
 
 .about-text {
   max-width: 600px;
@@ -241,17 +170,13 @@ nav a:hover {
 
 .about-text h3 {
   color: #f5f5f5;
-
   font-size: 24px;
-
   margin-bottom: 20px;
 }
 
 .about-text p {
   color: #b5b5b5;
-
   line-height: 1.6;
-
   margin-bottom: 15px;
 }
 
@@ -261,61 +186,37 @@ nav a:hover {
 
 #skills {
   padding: 70px 10%;
-
   background-color: #1a1a1a;
 }
 
-/* Skills Heading */
-
 #skills h2 {
   color: #0097b2;
-
   text-align: center;
-
   font-size: 32px;
-
   margin-bottom: 15px;
 }
 
-/* Skills Introduction */
-
 .skills-intro {
   color: #b5b5b5;
-
   text-align: center;
-
   margin-bottom: 40px;
 }
 
-/* Skills Grid */
-
 .skills-container {
   display: grid;
-
   grid-template-columns: repeat(4, 150px);
-
   justify-content: center;
-
   gap: 15px;
 }
 
-/* Skill Card */
-
 .skill-card {
   width: 150px;
-
   background-color: #252525;
-
   color: #f5f5f5;
-
   padding: 15px;
-
   text-align: center;
-
   border: 1px solid #3a3a3a;
-
   border-radius: 8px;
-
   transition: 0.3s;
 }
 
@@ -323,13 +224,9 @@ nav a:hover {
   font-size: 16px;
 }
 
-/* Skill Hover */
-
 .skill-card:hover {
   transform: translateY(-5px);
-
   border-color: #0097b2;
-
   color: #0097b2;
 }
 
@@ -339,81 +236,51 @@ nav a:hover {
 
 #projects {
   padding: 70px 10%;
-
   background-color: #0d0d0d;
 }
 
-/* Projects Heading */
-
 #projects h2 {
   color: #0097b2;
-
   text-align: center;
-
   font-size: 32px;
-
   margin-bottom: 15px;
 }
 
-/* Projects Introduction */
-
 .projects-intro {
   color: #b5b5b5;
-
   text-align: center;
-
   margin-bottom: 40px;
 }
 
-/* Projects Grid */
-
 .projects-container {
   display: grid;
-
   grid-template-columns: repeat(3, 300px);
-
   justify-content: center;
-
   gap: 30px;
 }
 
-/* Project Card */
-
 .project-card {
   background-color: #1a1a1a;
-
   border: 1px solid #333333;
-
   border-radius: 8px;
-
   overflow: hidden;
-
   transition: 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-
   border-color: #0097b2;
 }
-
-/* Project Image Placeholder */
 
 .project-image {
   width: 100%;
   height: 180px;
-
   background-color: #252525;
-
   color: #777777;
-
   display: flex;
-
   justify-content: center;
   align-items: center;
 }
-
-/* Project Content */
 
 .project-content {
   padding: 20px;
@@ -421,55 +288,38 @@ nav a:hover {
 
 .project-content h3 {
   color: #f5f5f5;
-
   font-size: 22px;
-
   margin-bottom: 10px;
 }
 
 .project-content p {
   color: #b5b5b5;
-
   line-height: 1.5;
-
   margin-bottom: 15px;
 }
 
-/* Project Technologies */
-
 .project-content .project-tech {
   color: #0097b2;
-
   font-size: 14px;
-
   font-weight: bold;
 }
 
-/* Project Links */
-
 .project-links {
   display: flex;
-
   gap: 10px;
 }
 
 .project-links a {
   background-color: #0097b2;
-
   color: #ffffff;
-
   padding: 10px 15px;
-
   text-decoration: none;
-
   border-radius: 4px;
-
   transition: 0.3s;
 }
 
 .project-links a:hover {
   background-color: #f5f5f5;
-
   color: #0d0d0d;
 }
 
@@ -479,75 +329,47 @@ nav a:hover {
 
 #contact {
   padding: 70px 10%;
-
   background-color: #1a1a1a;
-
   color: #f5f5f5;
 }
 
-/* Contact Heading */
-
 #contact h2 {
   color: #0097b2;
-
   text-align: center;
-
   font-size: 32px;
-
   margin-bottom: 15px;
 }
 
-/* Contact Introduction */
-
 .contact-intro {
   color: #b5b5b5;
-
   text-align: center;
-
   margin-bottom: 40px;
 }
 
-/* Contact Cards Container */
-
 .contact-container {
   display: flex;
-
   justify-content: center;
-
   gap: 20px;
 }
-
-/* Contact Card */
 
 .contact-card {
   width: 300px;
   height: 150px;
-
   background-color: #252525;
-
   border: 1px solid #333333;
-
   border-radius: 12px;
-
   display: flex;
-
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
-
   transition: 0.3s;
 }
 
-/* Contact Icon */
-
 .contact-icon {
- color: #0097b2;
+  color: #0097b2;
   font-size: 22px;
   margin-bottom: 10px;
 }
-
-/* Contact Card Heading */
 
 .contact-card h3 {
   color: #f5f5f5;
@@ -555,15 +377,11 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-/* Contact Links */
-
 .contact-card a {
   color: #b5b5b5;
   text-decoration: none;
   transition: 0.3s;
 }
-
-/* Contact Hover Effects */
 
 .contact-card:hover {
   transform: translateY(-5px);
@@ -577,7 +395,6 @@ nav a:hover {
 /* =========================================
    FOOTER
 ========================================= */
-
 footer {
   background-color: #0d0d0d;
   color: #b5b5b5;
