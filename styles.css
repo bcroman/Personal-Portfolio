@@ -1,204 +1,319 @@
-/* Basic */
+/* =========================================
+   BASIC / GLOBAL STYLING
+========================================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+
+  background-color: #0d0d0d;
+  color: #f5f5f5;
 }
 
-/* Header */
+/* =========================================
+   HEADER / NAVIGATION
+========================================= */
+
 header {
-  background-color: #333;
+  background-color: #0d0d0d;
+
   padding: 20px 40px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+
+  border-bottom: 2px solid #0097b2;
 }
 
 /* Logo */
+
 .logo a {
-  color: white;
+  color: #f5f5f5;
+
   font-size: 25px;
   font-weight: bold;
+
   text-decoration: none;
 }
 
 .logo p {
-  color: #ccc;
+  color: #0097b2;
+
   font-size: 12px;
-  margin-top: 0px;
 }
 
 /* Navigation */
+
 nav ul {
   display: flex;
+
   list-style: none;
+
   gap: 25px;
 }
 
 nav a {
-  color: white;
+  color: #f5f5f5;
+
   text-decoration: none;
+
   font-size: 20px;
+
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #ccc;
+  color: #0097b2;
 }
 
 /* Social Links */
+
 .social-links {
   display: flex;
+
   gap: 15px;
 }
 
 .social-links a {
-  color: white;
+  color: #b5b5b5;
+
   text-decoration: none;
+
   font-size: 20px;
+
+  transition: 0.3s;
 }
 
 .social-links a:hover {
-  color: #ccc;
+  color: #0097b2;
 }
 
-/* Hero */
+/* =========================================
+   HERO SECTION
+========================================= */
+
 #hero {
   min-height: 600px;
+
   padding: 60px 40px;
 
   display: flex;
   align-items: center;
 
-  background-color: #e5e5e5;
+  background-color: #1a1a1a;
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 /* Hero Content */
+
 .hero-content {
   max-width: 600px;
 }
 
 /* Hero Heading */
+
 .hero-content h1 {
+  color: #f5f5f5;
+
   font-size: 48px;
+
   margin-bottom: 20px;
 }
 
+/* Adds blue accent after name */
+
+.hero-content h1::after {
+  content: ".";
+  color: #0097b2;
+}
+
 /* Hero Paragraph */
+
 .hero-content p {
+  color: #b5b5b5;
+
   font-size: 18px;
+
   margin-bottom: 30px;
 }
 
-/* Hero Buttons Container */
+/* Hero Buttons */
+
 .hero-buttons {
   display: flex;
+
   gap: 15px;
 }
 
-/* Hero Buttons */
 .hero-button {
   display: inline-block;
-  background-color: #333;
-  color: white;
+
+  background-color: #0097b2;
+  color: #ffffff;
 
   padding: 12px 24px;
 
   text-decoration: none;
+
   border-radius: 4px;
+
+  transition: 0.3s;
 }
 
-/* Button Hover Effect */
 .hero-button:hover {
-  background-color: #555;
+  background-color: #f5f5f5;
+
+  color: #0d0d0d;
 }
 
-/* About Section */
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
 #about {
   padding: 70px 10%;
+
+  background-color: #0d0d0d;
 }
 
+/* About Heading */
+
 #about h2 {
+  color: #0097b2;
+
   text-align: center;
+
   font-size: 32px;
-  margin-bottom: 20px;
+
+  margin-bottom: 40px;
 }
+
+/* About Container */
 
 .about-container {
   display: flex;
+
   align-items: center;
   justify-content: center;
+
   gap: 50px;
 }
+
+/* About Image */
 
 .about-image {
   width: 300px;
   height: 300px;
-  background-color: #ddd;
+
+  background-color: #252525;
+
+  border: 2px solid #0097b2;
 
   display: flex;
+
   justify-content: center;
   align-items: center;
 
   border-radius: 8px;
+
+  color: #b5b5b5;
 }
+
+/* About Text */
 
 .about-text {
   max-width: 600px;
 }
 
 .about-text h3 {
+  color: #f5f5f5;
+
   font-size: 24px;
+
   margin-bottom: 20px;
 }
 
 .about-text p {
+  color: #b5b5b5;
+
   line-height: 1.6;
+
   margin-bottom: 15px;
 }
 
-/* Skils */
+/* =========================================
+   SKILLS SECTION
+========================================= */
+
 #skills {
   padding: 70px 10%;
-  background-color: #f4f4f4;
+
+  background-color: #1a1a1a;
 }
 
+/* Skills Heading */
+
 #skills h2 {
+  color: #0097b2;
+
   text-align: center;
+
   font-size: 32px;
+
   margin-bottom: 15px;
 }
 
+/* Skills Introduction */
+
 .skills-intro {
+  color: #b5b5b5;
+
   text-align: center;
-  color: #555;
+
   margin-bottom: 40px;
 }
 
 /* Skills Grid */
+
 .skills-container {
   display: grid;
+
   grid-template-columns: repeat(4, 150px);
+
   justify-content: center;
-  gap: 10px;
+
+  gap: 15px;
 }
 
 /* Skill Card */
+
 .skill-card {
-  background-color: white;
+  width: 150px;
+
+  background-color: #252525;
+
+  color: #f5f5f5;
+
   padding: 15px;
+
   text-align: center;
 
-  border: 1px solid #ddd;
+  border: 1px solid #3a3a3a;
+
   border-radius: 8px;
 
   transition: 0.3s;
@@ -208,26 +323,45 @@ nav a:hover {
   font-size: 16px;
 }
 
-/* Hover Effect */
+/* Skill Hover */
+
 .skill-card:hover {
   transform: translateY(-5px);
+
+  border-color: #0097b2;
+
+  color: #0097b2;
 }
 
-/* Projects */
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
 #projects {
   padding: 70px 10%;
-  background-color: white;
+
+  background-color: #0d0d0d;
 }
 
+/* Projects Heading */
+
 #projects h2 {
+  color: #0097b2;
+
   text-align: center;
+
   font-size: 32px;
+
   margin-bottom: 15px;
 }
 
+/* Projects Introduction */
+
 .projects-intro {
+  color: #b5b5b5;
+
   text-align: center;
-  color: #555;
+
   margin-bottom: 40px;
 }
 
@@ -235,17 +369,23 @@ nav a:hover {
 
 .projects-container {
   display: grid;
+
   grid-template-columns: repeat(3, 300px);
+
   justify-content: center;
+
   gap: 30px;
 }
 
 /* Project Card */
 
 .project-card {
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
+  background-color: #1a1a1a;
+
+  border: 1px solid #333333;
+
   border-radius: 8px;
+
   overflow: hidden;
 
   transition: 0.3s;
@@ -253,6 +393,8 @@ nav a:hover {
 
 .project-card:hover {
   transform: translateY(-5px);
+
+  border-color: #0097b2;
 }
 
 /* Project Image Placeholder */
@@ -260,132 +402,186 @@ nav a:hover {
 .project-image {
   width: 100%;
   height: 180px;
-  background-color: #ddd;
+
+  background-color: #252525;
+
+  color: #777777;
 
   display: flex;
+
   justify-content: center;
   align-items: center;
 }
 
-/* Project Information */
+/* Project Content */
 
 .project-content {
   padding: 20px;
 }
 
 .project-content h3 {
+  color: #f5f5f5;
+
   font-size: 22px;
+
   margin-bottom: 10px;
 }
 
 .project-content p {
+  color: #b5b5b5;
+
   line-height: 1.5;
+
   margin-bottom: 15px;
 }
 
-/* Technologies */
+/* Project Technologies */
 
-.project-tech {
+.project-content .project-tech {
+  color: #0097b2;
+
   font-size: 14px;
+
   font-weight: bold;
-  color: #555;
 }
 
 /* Project Links */
 
 .project-links {
   display: flex;
+
   gap: 10px;
 }
 
 .project-links a {
-  background-color: #333;
-  color: white;
+  background-color: #0097b2;
+
+  color: #ffffff;
 
   padding: 10px 15px;
 
   text-decoration: none;
+
   border-radius: 4px;
+
+  transition: 0.3s;
 }
 
 .project-links a:hover {
-  background-color: #555;
+  background-color: #f5f5f5;
+
+  color: #0d0d0d;
 }
 
-/* Contact */
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
 #contact {
-    padding: 70px 10%;
-    background-color: #080e1a;
-    color: white;
+  padding: 70px 10%;
+
+  background-color: #1a1a1a;
+
+  color: #f5f5f5;
 }
 
 /* Contact Heading */
+
 #contact h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 15px;
+  color: #0097b2;
+
+  text-align: center;
+
+  font-size: 32px;
+
+  margin-bottom: 15px;
 }
+
+/* Contact Introduction */
 
 .contact-intro {
-    text-align: center;
-    color: #aaa;
-    margin-bottom: 40px;
+  color: #b5b5b5;
+
+  text-align: center;
+
+  margin-bottom: 40px;
 }
 
-/* Contact Cards */
+/* Contact Cards Container */
+
 .contact-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
 }
 
-/* Contact Cards */
+/* Contact Card */
+
 .contact-card {
-    width: 300px;
-    height: 150px;
+  width: 300px;
+  height: 150px;
 
-    background-color: #111a2b;
-    border-radius: 12px;
+  background-color: #252525;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  border: 1px solid #333333;
 
-    transition: 0.3s;
+  border-radius: 12px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s;
 }
 
-/* Contact Icons */
+/* Contact Icon */
+
 .contact-icon {
-    font-size: 22px;
-    margin-bottom: 10px;
+ color: #0097b2;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-/* Card Heading */
+/* Contact Card Heading */
+
 .contact-card h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
+  color: #f5f5f5;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 /* Contact Links */
+
 .contact-card a {
-    color: #777;
-    text-decoration: none;
+  color: #b5b5b5;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-/* Card Hover */
+/* Contact Hover Effects */
+
 .contact-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
+  border-color: #0097b2;
 }
 
 .contact-card a:hover {
-    color: white;
+  color: #0097b2;
 }
 
-/* Footer Styling */
+/* =========================================
+   FOOTER
+========================================= */
+
 footer {
+  background-color: #0d0d0d;
+  color: #b5b5b5;
   text-align: center;
-  background-color: #333;
-  color: white;
   padding: 20px;
+  border-top: 1px solid #333333;
 }
