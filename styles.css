@@ -68,7 +68,58 @@ nav a:hover {
 }
 
 /* Hero */
+#hero {
+    min-height: 550px;
+    padding: 60px 40px;
 
+    display: flex;
+    align-items: center;
+
+    background-color: #e5e5e5;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 600px;
+}
+
+/* Hero Heading */
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Hero Paragraph */
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Hero Buttons Container */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Hero Buttons */
+.hero-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+
+    padding: 12px 24px;
+
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Button Hover Effect */
+.hero-button:hover {
+    background-color: #555;
+}
 
 /* Footer Styling */
 footer {
