@@ -214,6 +214,103 @@ nav a:hover {
 }
 
 /* Projects */
+#projects {
+  padding: 70px 10%;
+  background-color: white;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.projects-intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Projects Grid */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Project Card */
+
+.project-card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Project Image Placeholder */
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  background-color: #ddd;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Project Information */
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Technologies */
+
+.project-tech {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Project Links */
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-links a {
+  background-color: #333;
+  color: white;
+
+  padding: 10px 15px;
+
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.project-links a:hover {
+  background-color: #555;
+}
 
 /* Contact */
 
